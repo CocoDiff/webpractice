@@ -7,7 +7,7 @@ a {
     color: #000;
 }
 
-#banner .button {
+.banner .button {
     margin-left: 494px;
     margin-top: 25px;
     padding-left: 21px;
@@ -24,12 +24,11 @@ a {
 }
 
 .button:hover{
-    background-color: rgb(255, 0, 0);
-    opacity: 0.5;
+    opacity: 0.8;
     color:white;
 }
 
-#header { 
+.header { 
     line-height: 60px;
     text-indent: 450px;
     display:block;
@@ -46,13 +45,13 @@ img {
 }
 
 
-#header span {
+.header span {
     font-size: 15px;
     font-weight: 800;
     margin:5px;
 }
 
-#banner {
+.banner {
     display: block;
     margin-top:0;
     width: 1903px;
@@ -60,7 +59,7 @@ img {
     background-image: url("main.jpg");
 }
 
-#banner p {
+.banner p {
     margin-top: 44px;
     padding-left: 494px;
     padding-top: 88px;
@@ -72,23 +71,97 @@ img {
     height: 80px;  
 }
 
-#section {
+.section {
     text-align: center;
 }
 
+
+.section button {
+    display: inline;
+    margin-right: 2%;
+    width: 200px;
+    height: 200px;
+    border-style: none;
+    border-radius: 50%;
+}
+
+.section span {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.section .first {
+    background-image: url("profile1.png");
+}
+
+.first:hover {
+    border-style: none;
+    opacity: 0.5;
+}
+
+.first span:after {
+    content: "PoPo";
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.first:hover span:after {
+    margin: 0;
+    padding: 0;
+    content: "contact me by email: 000000@gmail.com";
+    font-size: 15px;
+    color:rgb(65, 0, 243);
+}
+
+.second {
+    background-image: url("profile2.png");
+}
+
+.second:hover {
+    border-style: none;
+    opacity: 0.5;
+}
+
+.second span:after {
+    content: "Jna";
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.second:hover span:after {
+    margin: 0;
+    padding: 0;
+    content: "contact me by email: 000000@gmail.com";
+    font-size: 15px;
+    color:rgb(65, 0, 243);
+}
+
+
 .content {
-    padding-left: 500px;
-    padding-right: 300px;
     display: inline-block;
-    width: auto;
-    height: auto;
+    padding-left: 700px;
+    padding-right: 300px;
+    position: static;
+}
+
+.ellipsis {
+    width: 250px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .nav {
     display: inline-block;
+    position: relative;
+    bottom: 270px;
 }
 
-#footer {
+.footer {
     width: 1903px;
     height: 92px;
     text-align: center;
