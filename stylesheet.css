@@ -1,10 +1,51 @@
+/* 전체 공백 삭제 */
 body {
     margin: 0;
 }
 
+/* 링크 설정 */
 a {
     text-decoration-line: none;
     color: #000;
+}
+
+hr {
+    background: rgb(165, 162, 162);
+    border: 0;
+    height: 1px;;
+}
+
+/* 최상단 헤더 */
+.header { 
+    line-height: 60px;
+    text-indent: 450px;
+    display:block;
+    position:fixed;
+    background: rgb(255, 255, 255);
+    width: 1903px;
+    height: 66px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+img {
+    width: 160px;
+    height: 63px;
+}
+
+.header span {
+    font-size: 15px;
+    font-weight: 800;
+    margin:5px;
+}
+
+/* 배너 : aka main.jpg */
+.banner {
+    display: block;
+    margin-top:0;
+    width: 1903px;
+    height: 383px;
+    background-image: url(main.jpg);
 }
 
 .banner .button {
@@ -23,40 +64,9 @@ a {
     color: #ffffff;
 }
 
-.button:hover{
-    opacity: 0.8;
-    color:white;
-}
-
-.header { 
-    line-height: 60px;
-    text-indent: 450px;
-    display:block;
-    position:fixed;
-    background: rgb(255, 255, 255);
-    width: 1903px;
-    height: 66px;
-    font-size: 20px;
-}
-
-img {
-    width: 160px;
-    height: 63px;
-}
-
-
-.header span {
-    font-size: 15px;
-    font-weight: 800;
-    margin:5px;
-}
-
-.banner {
-    display: block;
-    margin-top:0;
-    width: 1903px;
-    height: 383px;
-    background-image: url("main.jpg");
+.banner .button:hover{
+    background-color:rgb(255, 255, 255, 0.5);
+    
 }
 
 .banner p {
@@ -71,10 +81,10 @@ img {
     height: 80px;  
 }
 
+/* 팀원소개부분 */
 .section {
     text-align: center;
 }
-
 
 .section button {
     display: inline;
@@ -85,68 +95,69 @@ img {
     border-radius: 50%;
 }
 
-.section span {
-    margin: 0;
-    padding: 0;
+.profile {
     display: inline;
+    position: relative;
 }
 
-.section .first {
-    background-image: url("profile1.png");
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 2%;
+    vertical-align: middle;
 }
 
-.first:hover {
-    border-style: none;
+.profile img:hover {
+    cursor: pointer;
     opacity: 0.5;
 }
 
-.first span:after {
-    content: "PoPo";
-    color: #ffffff;
+.profile span {
+    position: absolute;
+    text-align: center;
+    color: white;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 800;
+    top: -30%;
+    left: 43%;
+    transform: translat(-50%, -50%);
 }
 
-.first:hover span:after {
-    margin: 0;
-    padding: 0;
-    content: "contact me by email: 000000@gmail.com";
-    font-size: 15px;
-    color:rgb(65, 0, 243);
+.profile img:hover span:after {
+    content:"hey";
 }
 
-.second {
-    background-image: url("profile2.png");
-}
-
-.second:hover {
-    border-style: none;
-    opacity: 0.5;
-}
-
-.second span:after {
-    content: "Jna";
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.second:hover span:after {
-    margin: 0;
-    padding: 0;
-    content: "contact me by email: 000000@gmail.com";
-    font-size: 15px;
-    color:rgb(65, 0, 243);
-}
-
-
+/*콘텐츠 부분*/
 .content {
     display: inline-block;
-    padding-left: 700px;
-    padding-right: 300px;
+    width: 32%;
+    height: 50%;
+    padding-left: 490px;
     position: static;
 }
 
+.content img {
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.content h2 {
+    margin-top: 5px;
+    margin-bottom: 0%;
+    font-size: 36px;
+}
+
+.content p {
+    font-size: 14px;
+    margin-bottom: 5%;
+    line-height: 180%;
+}
+
+/* 말 줄임 부분이지만 필요 없어서 생략
 .ellipsis {
     width: 250px;
     display: inline-block;
@@ -154,12 +165,27 @@ img {
     overflow: hidden;
     white-space: nowrap;
 }
+*/
+
+/* ================ */
 
 .nav {
     display: inline-block;
-    position: relative;
-    bottom: 270px;
+    position: static;
+    margin-left: 5%;
 }
+
+strong {
+    font-size: 21px;
+    color:rgb(107, 206, 201);
+}
+
+li {
+    list-style: none;
+    margin-top: 5px; 
+    font-size: 18px;
+}
+
 
 .footer {
     width: 1903px;
