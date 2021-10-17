@@ -46,7 +46,7 @@ img {
     margin-top:0;
     width: 1903px;
     height: 383px;
-    background-image: url(main.jpg);
+    background-image: url(../image/main.jpg);
 }
 
 .banner .button {
