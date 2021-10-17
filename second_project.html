@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta name="description" content="bandit level 0 ~ ">
+    <meta charset="utf-8" />
+    <title>우리팀 - 2번째 프로젝트의 기록</title>
+    <link href="icon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="second_project.css">
+</head>
+<body>
+    <!--header-->
+    <div class = "header">
+        <a href="index.html">
+        <span>우리팀</span><span>블로그</span></a>
+    </div><br>
+    
+    <div class="title">
+        <h1>두번째 프로젝트의 기록</h1>
+        <p>2021-06-29 ~ </p><br>
+        <pre>
+            이번 프로젝트에서는 OverTheWire의 wargame인 bandit 문제들의 풀이와, 명령어들을 정리합니다.
+            
+            [bandit Level 0 ~ 5 풀이]
+            
+            1. Level 0
+
+            The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org. on port 2220. 
+            The username is bandit0 and the password is bandit. Once logged in, go to the Level 1 page to find out how to beat Level 1.
+                
+            (해석)
+            이번 레벨의 목표는 SSH를 이용해 로그인하는 것입니다. bandit.labs.overthewire.org에서 2220번 포트로 호스트를 연결하세요.
+            사용자의 이름은 bandit0이고, 비밀번호는 bandit입니다. 한번 로그인 해보고, Level 1 페이지로 가서 어떻게 Level 1을 깰 수 있을지 찾아보세요.
+
+            [풀이]
+            PuTTY를 이용하는 방법도 있지만, 암호화 된 비밀번호를 수차례 입력하는 것은 힘들 것입니다. 저는 윈도우에서 SSH client를 설치하여 메모장에
+            다음과 같이 입력하여 이를 bat 확장자로 저장하였습니다.
+
+            @echo off
+
+            title SSH 서버 입니다.
+            ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+            :puase
+
+            이제 OverTheWire의 서버에 접속 할 수 있을 것입니다. Level 0는 서버에 연결하는 것으로 끝납니다.
+            ❗ 프로그램을 종료하지 말고 다음 레벨을 시도하세요.
+
+
+            2. Level 0 -> 1
+
+            The password for the next level is stored in a file called readme located in the home directory.
+            Use this password to log into bandit1 using SSH. Whenever you find a password for a level,
+            use SSH (on port 2220) to log into that level and continue the game.
+
+            (해석)
+            다음 레벨의 패스워드는 홈 디렉터리에 readme라는 파일에 저장되어 있습니다.
+            SSH 이용하여 bandit1에 이 패스워드를 입력하세요. 레벨의 패스워드를 찾았다면 SSH (2220 포트의)를 사용해 계속해서 레벨을 진행하세요.
+            
+            [풀이]
+            cat 명령어를 아세요?
+            cat 명령어는 파일의 내용을 확인, 수정, 추가 등을 할 수 있는 명령어입니다.
+            cat > filename / cat >> filename 과 같이 사용하며, 전자의 방법은 파일의 내용을 수정하거나, 생성할 수 있어요.
+            후자의 방법은 파일의 내용을 추가 할 수 있습니다.
+
+            이제 bandit1에서 cat 명령어를 사용해서, " cat readme " 라고 입력해보세요. 다음 레벨의 패스워드를 얻었습니다. 
+    </pre>
+    </div>
+
+</body>
