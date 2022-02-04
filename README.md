@@ -9,6 +9,7 @@ README.md 📚
 
 사용 된 언어
 <img src="http://img.shields.io/badge/html5-000000?style=flat-squred&logo=HTML5&logoColor=E34F26"/>
+<img src="http://img.shields.io/badge/html5-000000?style=flat-squred&logo=CSS Wizardry&logoColor=F43059"/>
 
 
 ⛏ 스크롤시 헤더 고정
