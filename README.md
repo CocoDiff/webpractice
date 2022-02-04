@@ -1,14 +1,14 @@
 # **README.md** 📚
 
 
-<a href="https://oopopop.github.io/webpractice/"><img src="http://img.shields.io/badge/blog-000000?style=flat-square&logo=bloglovin&logoColor=00B8FC"/></a>
+<a href="https://oopopop.github.io/webpractice/"><img src="http://img.shields.io/badge/Blog-000000?style=flat-square&logo=bloglovin&logoColor=00B8FC"/></a>
 
 
 우아한 형제들 기술블로그 클론코딩 2021 Ver.
 
 
 사용 된 언어
-<img src="http://img.shields.io/badge/html5-000000?style=flat-squred&logo=HTML5&logoColor=E34F26"/>
+<img src="http://img.shields.io/badge/HTML5-000000?style=flat-squred&logo=HTML5&logoColor=E34F26"/>
 <img src="http://img.shields.io/badge/CSS-000000?style=flat-squred&logo=CSS3&logoColor=1572B6"/>
 
 
